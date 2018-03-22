@@ -20,14 +20,14 @@
 
 // Platform specifics
 // Mac OSX
-@colorOSBackgroundFocus: #d9d0d0;
-@colorOSBackgroundBlur: lighten(@colorOSBackgroundFocus, 10%);
+@colorOSBackgroundFocus: #343438;
+@colorOSBackgroundBlur: #343438;
 
-@colorWinBackgroundFocus: #F0F0F0;
-@colorWinBackgroundBlur: #F0F0F0;
+@colorWinBackgroundFocus: #343438;
+@colorWinBackgroundBlur: #343438;
 
-@colorLinuxBackgroundFocus: #403F3A;
-@colorLinuxBackgroundBlur: #3C3B36;
+@colorLinuxBackgroundFocus: #343438;
+@colorLinuxBackgroundBlur: #343438;
 
 
 .global-notifications {
@@ -105,9 +105,15 @@ body {
             }
         }
     }
+    .marconi-header {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .dapp-header {
         background-color: @colorLinuxBackgroundFocus;
-        .background-image(linear-gradient(to bottom,  @colorLinuxBackgroundFocus 20%, lighten(@colorLinuxBackgroundFocus, 5%) 90%));
+        .background-image(linear-gradient(to bottom,  @colorLinuxBackgroundFocus 0%, @colorLinuxBackgroundFocus 100%));
         color: @colorWhite;
 
         nav a,
@@ -124,7 +130,7 @@ body {
         background: @colorOSBackgroundBlur;
 
         &.app-blur {
-            background: lighten(@colorOSBackgroundBlur, 10%);
+            background: @colorOSBackgroundBlur;
 
             .dapp-header {
                 background: @colorOSBackgroundBlur;
@@ -133,7 +139,7 @@ body {
     }
     .dapp-header {
         background-color: @colorOSBackgroundFocus;
-        .background-image(linear-gradient(to top,  @colorOSBackgroundFocus 20%, lighten(@colorOSBackgroundFocus, 10%) 90%));
+        .background-image(linear-gradient(to top,  @colorOSBackgroundFocus 20%, @colorOSBackgroundFocus 90%));
 
         nav > ul {
             margin-left: @gridWidth;
@@ -157,7 +163,7 @@ body {
     padding-left: @gridWidth * 2.5;
     background-color: @colorWinBackgroundFocus;
     -webkit-app-region: drag; // necessary to drag the wallet window
-    .background-image(linear-gradient(to bottom,  @colorWinBackgroundFocus 50%, #ddd9d9 90%));
+    .background-image(linear-gradient(to bottom,  @colorWinBackgroundFocus 50%, @colorWinBackgroundFocus 90%));
 
     &.dapp-small {
         z-index: 30;
