@@ -1,0 +1,20 @@
+{
+  "name": "meteor-dapp-wallet",
+  "version": "1.0.0",
+  "description": "The Ethereum wallet.",
+  "main": "main.js",
+  "dependencies": {
+    "meteor-build-client": "^0.4.1",
+    "node-less": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.neji.vm.tc:marconi/meteor-dapp-wallet.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
