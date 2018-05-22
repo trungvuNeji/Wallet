@@ -24,7 +24,7 @@
 @colorLinuxBackgroundFocus: #eeeeee;
 @colorLinuxBackgroundBlur: #eeeeee;
 
-@darkBlue: #023bb4;
+@darkblue: #023bb4;
 @darkgray : #6c6c72;
 @lightgray: #8d7171;
 
@@ -284,37 +284,6 @@ body {
 .dapp-header.dapp-small + .dapp-flex-content > .dapp-content {
   padding-top: @gridHeight * 6 - 3px;
 }
-
-// ============ Color for Header ===================
-
-.dapp-header nav > ul li a,
-.dapp-header nav > ul li a i,
-.dapp-header nav > ul li a span,
-.dapp-header nav > ul button {
-  padding: 6.13333333px 32px;
-  text-align: center;
-  // border-bottom: 5px solid transparent;
-  color: @darkBlue;
-  -webkit-transform-origin: 50% 100%;
-  -moz-transform-origin: 50% 100%;
-  -o-transform-origin: 50% 100%;
-  -ms-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
-.dapp-header nav > ul li a.active,
-.dapp-header nav > ul li a.active i,
-.dapp-header nav > ul li a.active span {
-  color: @darkgray;
-}
-
-.dapp-header nav > ul li a.active {
-  border-bottom: 5px solid @darkgray;
-}
-
-// ================== End for Color Header ================
 
 .account-balance {
   span {
@@ -905,6 +874,66 @@ body {
 .dapp-punctuation {
   opacity: 0.25;
 }
+
+// ============ Custom Color ===================
+
+.dapp-header nav > ul li a,
+.dapp-header nav > ul li a i,
+.dapp-header nav > ul li a span,
+.dapp-header nav > ul button {
+  padding: 6.13333333px 32px 0 32px;
+  text-align: center;
+  // border-bottom: 5px solid transparent;
+  color: @darkblue;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.dapp-header nav > ul li a span {
+  padding-bottom: 4.13333px;
+}
+
+.dapp-header nav > ul li a.active,
+.dapp-header nav > ul li a.active i,
+.dapp-header nav > ul li a.active span {
+  color: @darkgray;
+}
+
+.dapp-header nav > ul li a.active,
+.dapp-header nav > ul li a.active:focus {
+  // border-color: @darkgray;
+  border-bottom: 5px solid @darkgray;
+}
+
+.dapp-block-button {
+  background-color: @darkblue;
+  border-bottom: none;
+}
+
+.wallet-box .account-pattern {
+  background-color: @darkblue;
+}
+
+.wallet-box h3 {
+  color: @darkblue;
+}
+
+h2 {
+  padding: 5px 10px;
+  background-color: @darkgray;
+}
+
+body,
+html {
+  font-family: 'Comfortaa';
+}
+
+// ================== End for Custom Color ================
 
 /* #### Small wallet #### */
 @media screen and (max-width: 1099px) {
