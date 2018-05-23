@@ -25,6 +25,7 @@
 @colorLinuxBackgroundFocus: #eeeeee;
 @colorLinuxBackgroundBlur: #eeeeee;
 
+// Default font and colors
 @darkblue: #023bb4;
 @darkgray : #6c6c72;
 @lightgray: #8d7171;
@@ -912,6 +913,12 @@ body {
   border-bottom: 5px solid @darkgray;
 }
 
+.dapp-header {
+  padding: 0;
+  margin: 0 auto;
+  width: 90%;
+}
+
 .dapp-block-button {
   background-color: @darkblue;
   border-bottom: none;
@@ -928,12 +935,30 @@ body {
   line-height: 1.5em;
 }
 
+.wallet-box > h3.not-ens-name {
+  padding: 3px;
+}
+
 .dapp-container p {
   line-height: 1.5em;
 }
 
 .wallet-box.disabled:not(:hover) {
   opacity: 0.6;
+}
+
+.header-container {
+  padding: 60px 10px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 64px;
+  width: 450px;
+  box-sizing: content-box;
+  background-image: url(Marconi.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 h2 {
@@ -955,18 +980,14 @@ li {
   font-family: @marconiFont;
 }
 
-.header-container {
-  padding: 60px 10px 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 64px;
-  width: 450px;
-  box-sizing: content-box;
-  background-image: url(Marconi.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+a {
+  transition: all ease-in-out 0.3s;
+}
+
+a:hover {
+  color: @darkblue;
+  // border-bottom: 1px solid #02a8f3;
+  transition: all ease-in-out 0.3s;
 }
 
 // ================== End for Custom Color ================
