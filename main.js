@@ -13,7 +13,6 @@ const {
 process.env.NODE_ENV = 'production';
 
 let mainWindow;
-let addWindow;
 
 // Listen for app to be ready
 app.on('ready', function() {
@@ -21,7 +20,7 @@ app.on('ready', function() {
   mainWindow = new BrowserWindow({});
   // Load html into window
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, './app/client/index.html'),
+    pathname: path.join(__dirname, '/app/client/index.html'),
     protocol: 'file:',
     slashes: true
   }));
