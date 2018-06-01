@@ -1,0 +1,22 @@
+{
+  "name": "marconi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "electron .",
+    "package": "electrify package -- --icon=marconi-icon.icns"
+  },
+  "dependencies": {
+    "electrify": "^2.1.4",
+    "electron": "^2.0.2",
+    "electron-packager": "^12.1.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

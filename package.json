@@ -4,6 +4,7 @@
   "description": "The Ethereum wallet.",
   "main": "main.js",
   "dependencies": {
+    "electron": "^2.0.2",
     "meteor-build-client": "^0.4.1",
     "node-less": "^1.0.0"
   },
