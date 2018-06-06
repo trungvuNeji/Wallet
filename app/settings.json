@@ -1,12 +1,13 @@
 {
   "electron": {
-    "name": "Marconi",
+    "appname": "Marconi",
     "title": "Marconi",
     "icon": {
-      "darwin": "public/Marconi.ico",
+      "darwin": "marconi-icon.icns",
       "win32": "public/Marconi.ico"
     },
     "version": "0.1.0",
+
     "description": "Smart Ethernet Protocol",
     "height": 768,
     "width": 1024,
